@@ -1,0 +1,47 @@
+.container {
+  margin: 10px;
+}
+
+.container #logout {
+  float: right;
+  width: 150px;
+  background: #047d95;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 600;
+}
+
+.container #homepage {
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.button {
+  background: #047d95;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-weight: 600;
+  /* margin-left:20px; */
+}
+
+#list {
+  margin-top: 15px;
+}
+
+.app {
+  margin-top: 40px;
+}
+
+th {
+  background: #047d95;
+  color: white;
+  padding: 5px;
+}
