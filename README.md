@@ -28,7 +28,7 @@ You should have the following prerequisites to deploy the content repository wit
 
 Clone the project git repository:
 ```bash
-git clone https://gitlab.aws.dev/content-repository-blogs/content-repository
+git clone https://github.com/aws-samples/content-repository-with-dynamic-access-control
 ```
 
 Install the necessary dependencies:
