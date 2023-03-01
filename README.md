@@ -1,6 +1,6 @@
 # Content Repository With Dynamic Access Control
 
-This example walks you through how to build an end-to-end content repository using AWS services with a simple and dynamic access control based logic over unstructured data. This sample includes an AWS Cloud Development Kit (CDK) application to deploy the architectural foundation for the content repository as depicted in the diagram below. A simple react web UI to upload and list documents completes this demo environment. Further details can be found in this blog. The code is not meant for production workloads.
+This example walks you through how to build an end-to-end content repository using AWS services with a simple and dynamic access control based logic over unstructured data. This sample includes an AWS Cloud Development Kit (CDK) application to deploy the architectural foundation for the content repository as depicted in the diagram below. A simple react web UI to upload and list documents completes this demo environment. Further details can be found in this related [AWS architecture blog post](https://aws.amazon.com/blogs/architecture/content-repository-for-unstructured-data-with-multilingual-semantic-search-part-1). The code is not meant for production workloads.
 
 
 ![image info](./backend-cdk/img/content_repo_architecture.png)
