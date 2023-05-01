@@ -136,7 +136,7 @@ export class DemoDataStack extends cdk.Stack {
         userData: user_data,
       },
       code: lambda.Code.fromAsset("lambdas/cdk"),
-      runtime: lambda.Runtime.PYTHON_3_9,
+      runtime: lambda.Runtime.PYTHON_3_10,
       handler: "trigger_demo_data_ingestion.lambda_handler",
       timeout: cdk.Duration.seconds(30),
       executeOnHandlerChange: false,

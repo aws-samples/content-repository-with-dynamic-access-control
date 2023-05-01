@@ -27,7 +27,7 @@ export class BlogContentRepositoryStack extends cdk.Stack {
       code: lambda.Code.fromAsset("lambdas"),
       handler: "pre_token.lambda_handler",
       timeout: cdk.Duration.seconds(30),
-      runtime: lambda.Runtime.PYTHON_3_9,
+      runtime: lambda.Runtime.PYTHON_3_10,
     });
 
     // create the Cognito user pool
@@ -181,6 +181,7 @@ export class BlogContentRepositoryStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       serverAccessLogsPrefix: "access_logs",
       autoDeleteObjects: true,
+      objectOwnership: s3.ObjectOwnership.OBJECT_WRITER,
       cors: [
         {
           allowedMethods: [
@@ -294,7 +295,7 @@ export class BlogContentRepositoryStack extends cdk.Stack {
       code: lambda.Code.fromAsset("lambdas"),
       handler: "list_file.lambda_handler",
       timeout: cdk.Duration.seconds(30),
-      runtime: lambda.Runtime.PYTHON_3_9,
+      runtime: lambda.Runtime.PYTHON_3_10,
     });
 
     // create Lambda function to create a presigned S3 url to upload a document from the frontend app to the content repository
@@ -309,7 +310,7 @@ export class BlogContentRepositoryStack extends cdk.Stack {
       code: lambda.Code.fromAsset("lambdas"),
       handler: "presigned_url.lambda_handler",
       timeout: cdk.Duration.seconds(30),
-      runtime: lambda.Runtime.PYTHON_3_9,
+      runtime: lambda.Runtime.PYTHON_3_10,
     });
 
     // permission policy for the pre-token generation trigger to list the assigned groups from CUP users
